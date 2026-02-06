@@ -40,8 +40,8 @@ Una aplicación iOS potente y fácil de usar para calcular el precio de venta un
 
 ## 🛠️ Requisitos
 
-- iOS 14.0 o superior
-- iPhone/iPad
+- iOS 18.6 o superior
+- iPhone
 
 ## 📦 Tecnología
 
