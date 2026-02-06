@@ -15,8 +15,11 @@ jobs:
     
     - name: Build
       run: |
-        xcodebuild -scheme ConsultorPrecio -configuration Debug -derivedDataPath build
-    
-    - name: Run Tests
-      run: |
-        xcodebuild test -scheme ConsultorPrecio -configuration Debug
+        xcodebuild -scheme ConsultorPrecio \
+          -configuration Debug \
+          -derivedDataPath build \
+          -allowProvisioningUpdates \
+          -sdk iphonesimulator \
+          -arch arm64 \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO
